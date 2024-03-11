@@ -94,3 +94,17 @@ test.c:47:6: error: ‘readIntArray’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 74b2149
+Mon 11 Mar 2024 05:41:46 PM UTC: 
+ exercises.c | 29 +++++++++++++----------------
+ 1 file changed, 13 insertions(+), 16 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:23:12: error: expected identifier or ‘(’ before ‘=’ token
+   23 |   for (int = 0; i < size / 2; i++)
+      |            ^
+exercises.c:23:17: error: ‘i’ undeclared (first use in this function)
+   23 |   for (int = 0; i < size / 2; i++)
+      |                 ^
+exercises.c:23:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+5fb5a1d
