@@ -10,7 +10,21 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
 int findMax(int arr[], int size) { return 0; }
-
+int max;
+for (int i = 0; i < size; i++)
+  {
+    if (i == 0)
+    {
+      max = arr[i];
+    }
+    else
+    {
+      if (arr[i] > max)
+      {
+        max = arr[i];
+      }
+    }
+  }
 /*
 Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
