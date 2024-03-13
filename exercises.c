@@ -71,7 +71,7 @@ arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {
-  int *nuevoArr = (int *)malloc(size * sizeof(int));
+  int *nuevoArr = (int *)malloc(size1 * sizeof(int));
   for (int i = 0; i < size1; i++)
     {
       nuevoArr[i] = arr1[i];
