@@ -168,3 +168,14 @@ Wed 13 Mar 2024 01:40:25 AM UTC:
  tests:  0|3
 total_score: 40/70
 c15bab4
+Wed 13 Mar 2024 05:15:15 PM UTC: 
+ exercises.c | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:113:56: error: expected ‘]’ before ‘)’ token
+  113 |       if (arr[i] > arr[i + 1 || arr[i + 1] < arr[i + 2])
+      |                                                        ^
+      |                                                        ]
+Compilation failed
+613c5d3
