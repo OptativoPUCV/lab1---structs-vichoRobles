@@ -396,3 +396,8 @@ exercises.c:194:26: error: initialization of ‘int *’ from incompatible point
 cc1: all warnings being treated as errors
 Compilation failed
 b715001
+Fri 15 Mar 2024 12:53:21 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+1bea806

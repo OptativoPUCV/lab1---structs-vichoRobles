@@ -191,7 +191,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
       {
         while (cabeza != NULL)
           {
-            nodo *temp = cabeza;
+            Nodo *temp = cabeza;
             cabeza = cabeza->siguiente;;
             free(temp);
           }
