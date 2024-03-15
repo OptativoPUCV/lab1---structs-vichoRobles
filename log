@@ -332,3 +332,25 @@ Fri 15 Mar 2024 12:42:14 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 476f5bb
+Fri 15 Mar 2024 12:51:38 AM UTC: 
+ exercises.c | 29 +++++++++++++++++++----------
+ 1 file changed, 19 insertions(+), 10 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:187:3: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘for’
+  187 |   for (int i = 0; i < size; i++)
+      |   ^~~
+exercises.c:194:13: error: unknown type name ‘nodo’; use ‘struct’ keyword to refer to the type
+  194 |             nodo *temp = cabeza;
+      |             ^~~~
+      |             struct 
+exercises.c:194:26: error: initialization of ‘int *’ from incompatible pointer type ‘Nodo *’ {aka ‘struct nodo *’} [-Werror=incompatible-pointer-types]
+  194 |             nodo *temp = cabeza;
+      |                          ^~~~~~
+exercises.c:210:9: error: ‘ultimo’ undeclared (first use in this function)
+  210 |         ultimo->siguiente = nuevoNodo;
+      |         ^~~~~~
+exercises.c:210:9: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+04dd7af
