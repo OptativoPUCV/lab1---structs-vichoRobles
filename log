@@ -459,3 +459,27 @@ test.c:44:6: error: ‘readIntArray’ defined but not used [-Werror=unused-func
 cc1: all warnings being treated as errors
 Compilation failed
 53221d1
+Fri 15 Mar 2024 02:31:44 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+test.c: In function ‘crearListaEnlazada’:
+test.c:385:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  385 | int main(int argc, char *argv[]) {
+      |     ^~~~
+test.c:411:1: error: expected declaration or statement at end of input
+  411 | }
+      | ^
+test.c:7:6: error: unused variable ‘msg’ [-Werror=unused-variable]
+    7 | char msg[300];
+      |      ^~~
+test.c:412: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:385:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  385 | int main(int argc, char *argv[]) {
+      |     ^~~~
+test.c:44:6: error: ‘readIntArray’ defined but not used [-Werror=unused-function]
+   44 | void readIntArray(int arr[], int *size) {
+      |      ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+792ad17
