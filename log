@@ -311,3 +311,9 @@ exercises.c:190:36: error: ‘nodo’ undeclared (first use in this function)
 exercises.c:190:36: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 96cd675
+Fri 15 Mar 2024 12:38:42 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|1
+total_score: 60/70
+2466ef6
