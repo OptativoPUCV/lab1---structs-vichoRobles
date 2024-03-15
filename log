@@ -239,3 +239,49 @@ Fri 15 Mar 2024 12:18:00 AM UTC:
  tests:  0|1
 total_score: 60/70
 757fb70
+Fri 15 Mar 2024 12:34:46 AM UTC: 
+ exercises.c | 32 +++++++++++++++++++++++++++++++-
+ 1 file changed, 31 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:184:3: error: unknown type name ‘nodo’; use ‘struct’ keyword to refer to the type
+  184 |   nodo *cabeza = NULL;
+      |   ^~~~
+      |   struct 
+exercises.c:185:3: error: unknown type name ‘nodo’; use ‘struct’ keyword to refer to the type
+  185 |   nodo *temp = NULL;
+      |   ^~~~
+      |   struct 
+exercises.c:186:3: error: unknown type name ‘nodo’; use ‘struct’ keyword to refer to the type
+  186 |   nodo *actual = NULL;
+      |   ^~~~
+      |   struct 
+exercises.c:190:7: error: unknown type name ‘nodo’; use ‘struct’ keyword to refer to the type
+  190 |       nodo *nuevoNodo = (nodo *)malloc(sizeof(nodo));
+      |       ^~~~
+      |       struct 
+exercises.c:190:26: error: ‘nodo’ undeclared (first use in this function)
+  190 |       nodo *nuevoNodo = (nodo *)malloc(sizeof(nodo));
+      |                          ^~~~
+exercises.c:190:26: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:190:32: error: expected expression before ‘)’ token
+  190 |       nodo *nuevoNodo = (nodo *)malloc(sizeof(nodo));
+      |                                ^
+exercises.c:191:16: error: request for member ‘numero’ in something not a structure or union
+  191 |       nuevoNodo->numero = arr[i];
+      |                ^~
+exercises.c:192:16: error: request for member ‘siguiente’ in something not a structure or union
+  192 |       nuevoNodo->siguiente = NULL;
+      |                ^~
+exercises.c:201:13: error: request for member ‘siguiente’ in something not a structure or union
+  201 |         temp->siguiente = nuevoNodo;
+      |             ^~
+exercises.c:209:10: error: returning ‘int *’ from a function with incompatible return type ‘Nodo *’ {aka ‘struct nodo *’} [-Werror=incompatible-pointer-types]
+  209 |   return cabeza;
+      |          ^~~~~~
+exercises.c:186:9: error: unused variable ‘actual’ [-Werror=unused-variable]
+  186 |   nodo *actual = NULL;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a4a9909
