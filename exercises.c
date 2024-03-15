@@ -210,6 +210,8 @@ Nodo *crearListaEnlazada(int arr[], int size) {
         ultimo->siguiente = nuevoNodo;
       }
       ultimo = nuevoNodo;
+    
     }
+  return cabeza;
   
-  return cabeza; }
+  }
