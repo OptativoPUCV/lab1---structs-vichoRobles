@@ -381,3 +381,18 @@ exercises.c:194:26: error: initialization of ‘int *’ from incompatible point
 cc1: all warnings being treated as errors
 Compilation failed
 77610fc
+Fri 15 Mar 2024 12:53:12 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:194:13: error: unknown type name ‘nodo’; use ‘struct’ keyword to refer to the type
+  194 |             nodo *temp = cabeza;
+      |             ^~~~
+      |             struct 
+exercises.c:194:26: error: initialization of ‘int *’ from incompatible pointer type ‘Nodo *’ {aka ‘struct nodo *’} [-Werror=incompatible-pointer-types]
+  194 |             nodo *temp = cabeza;
+      |                          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b715001
