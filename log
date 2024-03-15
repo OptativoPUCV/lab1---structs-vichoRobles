@@ -300,3 +300,14 @@ exercises.c:186:9: error: unused variable ‘actual’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 df56571
+Fri 15 Mar 2024 12:38:25 AM UTC: 
+ exercises.c | 20 +++++++-------------
+ 1 file changed, 7 insertions(+), 13 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:190:36: error: ‘nodo’ undeclared (first use in this function)
+  190 |       temp = (Nodo *)malloc(sizeof(nodo));
+      |                                    ^~~~
+exercises.c:190:36: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+96cd675
